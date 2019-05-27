@@ -13,7 +13,8 @@ Exemplo
 
 00 02 * * * /home/matheus/documentos/backup.sh
 
-#!/bin/bash
+O script primeiramente irá verificar se há um diretório de backup já criado escolhido primeiramente como /home/backup apache, caso já haja o diretório criado exibirá a mensagem de confirmação.
+Caso queira alterar realizar a alteração escolhendo o diretório necessário e incluindo ele.
 
 echo "VALIDANDO DIRETÓRIO DE BACKUP"
 if [ -d "/home/backup_apache" ]
@@ -24,6 +25,10 @@ else
 	mkdir /home/backup_apache
 	echo "Diretorio de backup criado"
 fi
+
+
+Logo após será dada as opções de backup.
+Aonde foi feita a alteração do diretório para backup alterar na variável destino do script.
 
 echo "***SCRIPT BACKUP APACHE SERVER***"
 echo "Este script tem como atuação realizar o backup de arquivos de log e conteúdo de um apache server."
@@ -125,3 +130,4 @@ then
 	echo "Opção inválida. Favor digitar a opção correta."
 fi
 
+Após o backup o arquivo é visualizado mostrando se o backup foi executado ou nao.
