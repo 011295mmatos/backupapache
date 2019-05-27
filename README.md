@@ -16,6 +16,7 @@ Exemplo
 O script primeiramente irá verificar se há um diretório de backup já criado escolhido primeiramente como /home/backup apache, caso já haja o diretório criado exibirá a mensagem de confirmação.
 Caso queira alterar realizar a alteração escolhendo o diretório necessário e incluindo ele.
 
+#!
 echo "VALIDANDO DIRETÓRIO DE BACKUP"
 if [ -d "/home/backup_apache" ]
 then
@@ -25,7 +26,7 @@ else
 	mkdir /home/backup_apache
 	echo "Diretorio de backup criado"
 fi
-
+#!
 
 Logo após será dada as opções de backup.
 Aonde foi feita a alteração do diretório para backup alterar na variável destino do script.
